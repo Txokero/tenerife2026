@@ -1,1 +1,70 @@
-<!doctype html><html lang='es'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='theme-color' content='#087e83'><title>Tenerife 2026</title><style>*{box-sizing:border-box}body{margin:0;font:17px system-ui;background:#f5f4ed;color:#123e43}header{padding:40px 24px;background:linear-gradient(130deg,#07566d,#099b91);color:white;border-radius:0 0 30px 30px}h1{font-size:40px;margin:8px 0}main{padding:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:850px;margin:auto}button{border:0;background:white;border-radius:18px;padding:24px 12px;text-align:left;font:inherit;color:inherit;font-weight:700;min-height:90px}section{padding:24px;background:white;border-radius:18px;margin:20px}small{display:block;padding:20px;text-align:center}</style><header>GUÍA DE VIAJE<h1>Tenerife 2026</h1>Descubre la isla</header><main id='menu'></main><section id='detail' hidden></section><small>Versión 1.2 · Base de publicación</small><script>const names=['Itinerario','Vuelos y reservas','Qué visitar','Guachinches y restaurantes','Gastronomía','Playas','Navidad','Aparcamientos','Meteorología','Gastos','Favoritos','Diario','Información útil'];const menu=document.getElementById('menu'),detail=document.getElementById('detail');for(const name of names){const b=document.createElement('button');b.textContent=name;b.onclick=()=>{menu.hidden=true;menu.style.display='none';detail.hidden=false;detail.replaceChildren();const back=document.createElement('button');back.textContent='← Inicio';back.onclick=()=>{detail.hidden=true;menu.hidden=false;menu.style.display='grid'};const h=document.createElement('h2');h.textContent=name;const p=document.createElement('p');p.textContent='Sección pendiente de incorporar contenido.';detail.append(back,h,p)};menu.append(b)}</script></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073c42">
+  <title>Tenerife · Guía de viaje</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 4.5rem; }
+    body { margin: 0; background: #f5f3eb; color: #073c42; font: 1rem/1.55 system-ui,sans-serif; }
+    header { background: #073c42; color: #fff9ea; padding: clamp(2rem, 8vw, 5rem) 1rem 2rem; }
+    .wrap { max-width: 42rem; margin: auto; }
+    h1 { font: 700 clamp(3rem, 12vw, 6rem)/1 Georgia,serif; margin: 0; }
+    header p { margin: .8rem 0 0; }
+    nav { position: sticky; top: 0; background: #fff9ea; border-bottom: 1px solid #c9d3c9; }
+    nav .wrap { display: flex; justify-content: space-around; }
+    a { color: #07565a; text-underline-offset: .2em; }
+    nav a { display: block; padding: .8rem .5rem; font-weight: 700; }
+    main { padding: 0 1rem 2rem; }
+    section { margin: 1.5rem 0; }
+    h2 { font: 700 2rem Georgia,serif; margin: 0 0 .75rem; }
+    details { background: white; border: 1px solid #d8dfd8; border-radius: .85rem; margin: .5rem 0; }
+    summary { cursor: pointer; padding: .85rem 1rem; font-weight: 700; }
+    details p { padding: 0 1rem 1rem; margin: 0; }
+    .card { background: #e8efde; border-radius: .85rem; padding: 1rem; }
+    .card a { display: inline-block; padding: .45rem 0; }
+    :focus-visible { outline: 3px solid #b24c26; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><h1>Tenerife</h1><p>Una semana desde Los Cristianos</p></div></header>
+  <nav aria-label="Secciones"><div class="wrap">
+    <a href="#plan">Plan diario</a>
+    <a href="#comer">Dónde comer</a>
+    <a href="#mapas">Mapas</a>
+  </div></nav>
+  <main class="wrap">
+    <section id="plan">
+      <h2>Plan diario</h2>
+      <details open><summary>Día 1 · Llegada y Los Cristianos</summary><p>Desde Tenerife Norte, id directamente al sur. Dejad la tarde libre para pasear junto al mar, entre el puerto y Las Vistas.</p></details>
+      <details><summary>Día 2 · La Laguna</summary><p>Recorred el casco histórico a pie por la plaza del Adelantado y la calle San Agustín. Si os apetece comer de camino, buscad un guachinche por Tacoronte.</p></details>
+      <details><summary>Día 3 · Santa Cruz y Las Teresitas</summary><p>Empezad por el Mercado de Nuestra Señora de África y seguid hacia la plaza de España. Podéis terminar en Las Teresitas o volver al centro para ver el ambiente navideño. Consultad la agenda antes de salir si queréis ver un mercadillo.</p></details>
+      <details><summary>Día 4 · Puerto de la Cruz y La Orotava</summary><p>Paseo por el puerto y la plaza del Charco por la mañana. Después, comida en el valle y una vuelta por el casco de La Orotava, pasando por la Casa de los Balcones.</p></details>
+      <details><summary>Día 5 · Garachico e Icod</summary><p>Recorred el casco de Garachico y el entorno de El Caletón desde el paseo. Podéis dedicar la tarde al casco de Icod y al entorno del Drago Milenario.</p></details>
+      <details><summary>Día 6 · Los Gigantes y Playa San Juan</summary><p>Contemplad los acantilados desde el Mirador de Archipenque y bajad a Playa San Juan para comer o pasear por la costa.</p></details>
+      <details><summary>Día 7 · El Médano o descanso en el sur</summary><p>Id a El Médano si os apetece cambiar de playa. Si preferís un día tranquilo, quedaos en Los Cristianos y reservad la tarde para repetir el paseo que más os haya gustado.</p></details>
+      <details><summary>Día 8 · Regreso</summary><p>Desayuno y salida hacia Tenerife Norte con margen para devolver el coche antes de ir a la terminal.</p></details>
+    </section>
+    <section id="comer">
+      <h2>Dónde comer</h2>
+      <div class="card">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=guachinches+Tacoronte+Tenerife">Guachinches en Tacoronte</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=guachinches+La+Orotava+Tenerife">Guachinches en La Orotava</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=restaurantes+Playa+San+Juan+Tenerife">Restaurantes en Playa San Juan</a>
+        <p>Para probar comida canaria, buscad escaldón de gofio, carne fiesta o papas arrugadas con mojo. Comprobad el horario del guachinche antes de desplazaros.</p>
+      </div>
+    </section>
+    <section id="mapas">
+      <h2>Mapas y aparcamientos</h2>
+      <div class="card">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=aparcamiento+Los+Cristianos+Tenerife">Aparcamientos en Los Cristianos</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=aparcamiento+casco+hist%C3%B3rico+La+Laguna+Tenerife">Aparcamientos en La Laguna</a><br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=aparcamiento+plaza+de+Espa%C3%B1a+Santa+Cruz+de+Tenerife">Aparcamientos en Santa Cruz</a><br>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Aeropuerto+Tenerife+Norte">Cómo llegar a Tenerife Norte</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
