@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#073c42">
   <title>Tenerife · Guía de viaje</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon-192.png" type="image/png">
   <style>
     * { box-sizing: border-box; }
     html { scroll-padding-top: 4.5rem; }
@@ -33,7 +35,7 @@
   </style>
 </head>
 <body>
-  <header><div class="wrap"><h1>Tenerife</h1><p>Una semana desde Los Cristianos</p></div></header>
+  <header><div class="wrap"><h1>Tenerife</h1><p>Una semana desde Los Cristianos</p><button id="install-app" hidden>Instalar guía</button><p id="offline-status" role="status"></p></div></header>
   <nav aria-label="Secciones"><div class="wrap">
     <a href="#plan">Plan diario</a>
     <a href="#comer">Dónde comer</a>
@@ -111,5 +113,33 @@
       </div>
     </section>
   </main>
+  <script>
+    const installButton = document.querySelector('#install-app');
+    let installPrompt;
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault();
+      installPrompt = event;
+      installButton.hidden = false;
+    });
+    installButton.addEventListener('click', async () => {
+      const prompt = installPrompt;
+      installPrompt = null;
+      installButton.hidden = true;
+      await prompt?.prompt();
+    });
+    window.addEventListener('appinstalled', () => {
+      installPrompt = null;
+      installButton.hidden = true;
+    });
+    if ('serviceWorker' in navigator) {
+      const showOfflineStatus = () => {
+        if (navigator.serviceWorker.controller) {
+          document.querySelector('#offline-status').textContent = 'Guía disponible sin conexión';
+        }
+      };
+      navigator.serviceWorker.addEventListener('controllerchange', showOfflineStatus);
+      navigator.serviceWorker.register('./sw.js').then(showOfflineStatus).catch(console.error);
+    }
+  </script>
 </body>
 </html>
