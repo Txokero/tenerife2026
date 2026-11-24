@@ -26,6 +26,10 @@
     .card { background: #e8efde; border-radius: .85rem; padding: 1rem; }
     .card a { display: inline-block; padding: .45rem 0; }
     :focus-visible { outline: 3px solid #b24c26; outline-offset: 3px; }
+  .food-plate { display:block; width:100%; height:auto; border-radius:.6rem; }
+    .food-lists { padding:0 1rem 1rem; }
+    .food-lists h3 { margin:.65rem 0 .2rem; }
+    .food-lists ul { margin:.2rem 0; padding-left:1.2rem; }
   </style>
 </head>
 <body>
@@ -39,7 +43,11 @@
     <section id="plan">
       <h2>Plan diario</h2>
       <details open><summary>Día 1 · Llegada y Los Cristianos</summary><p>Recoged el coche en Tenerife Norte antes de salir hacia el sur. Seguid el punto de encuentro del bono de alquiler. Aena sitúa los <a href="https://www.aena.es/es/tenerife-norte-ciudad-de-la-laguna/servicios-del-aeropuerto/alquiler-coches.html">mostradores de alquiler de la terminal</a> en la planta 0. Tened a mano el bono, el permiso de conducir y el DNI o pasaporte. Dejad la tarde libre para pasear junto al mar, entre el puerto y Las Vistas.</p><p>Para dejar el coche bajo techo, consultad el <a href="#parking-los-cristianos">parking INDIGO de Los Cristianos</a>.</p></details>
-      <details><summary>Día 2 · La Laguna</summary><p>Recorred el casco histórico a pie por la plaza del Adelantado y la calle San Agustín. Si os apetece comer de camino, buscad un guachinche por Tacoronte.</p></details>
+      <details><summary>Día 2 · La Laguna</summary>
+        <p><strong>10:30 · La Laguna a pie.</strong> Aparcad en <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Parking%20Las%20Quinteras%20La%20Laguna%20Tenerife">Las Quinteras</a> y recorred plaza del Adelantado, calle San Agustín y plaza de la Concepción.</p>
+        <p><strong>13:30 · Comida.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Bodeg%C3%B3n%20Viana%20La%20Laguna%20Tenerife">Bodegón Viana</a>, de cocina canaria, o <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Laguna%20Nivaria%20La%20Laguna%20Tenerife">Laguna Nivaria</a>, en la plaza del Adelantado.</p>
+        <p><strong>15:30 · Casco histórico o Anaga.</strong> Quedaos a pasear por la ciudad o, si el tiempo acompaña, acercaos al <a href="https://www.google.com/maps/search/?api=1&amp;query=Mirador%20de%20Jardina%20Tenerife">Mirador de Jardina</a> y a Cruz del Carmen. Elegid una opción para ir con calma.</p>
+      </details>
       <details>
         <summary>Día 3 · Santa Cruz y Las Teresitas</summary>
         <p><strong>10:30 · Mercado y casco histórico.</strong> Dejad el coche en el <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Parking+Mercado+Nuestra+Se%C3%B1ora+de+%C3%81frica+Santa+Cruz+de+Tenerife">aparcamiento del Mercado de Nuestra Señora de África</a>. Visitad la Recova y seguid a pie por la plaza de la Iglesia de la Concepción, la plaza de la Candelaria y la plaza de España.</p>
@@ -47,20 +55,50 @@
         <p><strong>13:30 · Comida en San Andrés.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante+La+Pandorga+San+Andr%C3%A9s+Tenerife">La Pandorga</a>, en Bartolomé Belza 4. Como alternativa, <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante+El+Pet%C3%B3n+San+Andr%C3%A9s+Tenerife">El Petón</a>, en la calle Aparejo. Comprobad el horario antes de ir.</p>
         <p><strong>15:30 · Las Teresitas.</strong> Id al <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Aparcamiento+Playa+de+Las+Teresitas+Tenerife">aparcamiento de la playa</a> y dejad la tarde libre para pasear junto al mar. Después podéis regresar al sur o volver al centro para el concierto.</p>
       </details>
-      <details><summary>Día 4 · Puerto de la Cruz y La Orotava</summary><p>Paseo por el puerto y la plaza del Charco por la mañana. Después, comida en el valle y una vuelta por el casco de La Orotava, pasando por la Casa de los Balcones.</p></details>
-      <details><summary>Día 5 · Garachico e Icod</summary><p>Recorred el casco de Garachico y el entorno de El Caletón desde el paseo. Podéis dedicar la tarde al casco de Icod y al entorno del Drago Milenario.</p></details>
-      <details><summary>Día 6 · Los Gigantes y Playa San Juan</summary><p>Contemplad los acantilados desde el Mirador de Archipenque y bajad a Playa San Juan para comer o pasear por la costa.</p></details>
-      <details><summary>Día 7 · El Médano o descanso en el sur</summary><p>Id a El Médano si os apetece cambiar de playa. Si preferís un día tranquilo, quedaos en Los Cristianos y reservad la tarde para repetir el paseo que más os haya gustado.</p></details>
+      <details><summary>Día 4 · Puerto de la Cruz y La Orotava</summary>
+        <p><strong>10:30 · Puerto de la Cruz.</strong> Probad la <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Explanada%20del%20Muelle%20parking%20Puerto%20de%20la%20Cruz">explanada del muelle</a>. Pasead por el puerto, la plaza del Charco y las calles de La Ranilla.</p>
+        <p><strong>13:30 · Guachinche.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Los%20G%C3%B3mez%20La%20Orotava%20Tenerife">Los Gómez</a> o <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20La%20Cernidera%20Las%20Cuevas%20La%20Orotava">La Cernidera</a>. Confirmad que abren antes de desplazaros.</p>
+        <p><strong>15:30 · La Orotava.</strong> Paseo por la Casa de los Balcones, la iglesia de la Concepción y la plaza del Ayuntamiento. Si preferís visitar el mercado navideño de Los Realejos, reservad esa alternativa para el 18–20 de diciembre.</p>
+      </details>
+      <details><summary>Día 5 · Garachico e Icod</summary>
+        <p><strong>10:30 · Garachico.</strong> Aparcad en la <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Aparcamiento%20Muelle%20de%20Garachico%20Tenerife">explanada del antiguo muelle</a>. Pasead por la plaza de la Libertad, el castillo de San Miguel y El Caletón desde el paseo.</p>
+        <p><strong>13:30 · Comida.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Ar%C3%ADstides%20Garachico">Arístides</a> en el casco o <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Proa%20Norte%20Garachico">Proa Norte</a> cerca del aparcamiento.</p>
+        <p><strong>15:30 · Icod de los Vinos.</strong> Visitad el casco y la plaza de Andrés de Lorenzo Cáceres. Si queréis entrar al <a href="https://www.google.com/maps/search/?api=1&amp;query=Parque%20del%20Drago%20Icod%20de%20los%20Vinos">Parque del Drago</a>, consultad el horario de acceso.</p>
+      </details>
+      <details><summary>Día 6 · Los Gigantes y Playa San Juan</summary>
+        <p><strong>10:30 · Los Gigantes.</strong> Parada en el <a href="https://www.google.com/maps/search/?api=1&amp;query=Mirador%20de%20Archipenque%20Los%20Gigantes%20Tenerife">Mirador de Archipenque</a> y paseo por el pueblo.</p>
+        <p><strong>13:30 · Playa San Juan.</strong> Usad el <a href="https://www.google.com/maps/dir/?api=1&amp;destination=55JP%2B4M%20Gu%C3%ADa%20de%20Isora%20Tenerife">aparcamiento público al inicio del paseo</a>. Para comer, <a href="https://www.google.com/maps/search/?api=1&amp;query=Taberna%20Agua%20y%20Sal%20Playa%20San%20Juan%20Tenerife">Agua y Sal</a> o <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Plazale%20Playa%20San%20Juan%20Tenerife">Plazale</a>.</p>
+        <p><strong>15:30 · Paseo marítimo.</strong> Podéis quedaros junto a la playa o caminar hacia el acantilado de la Isorana. Masca queda como alternativa de mañana si os apetece dedicarle más tiempo y hay buena visibilidad.</p>
+      </details>
+      <details><summary>Día 7 · El Médano o descanso en el sur</summary>
+        <p><strong>11:00 · El Médano.</strong> Dejad el coche en el <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Parking%20Campo%20de%20F%C3%BAtbol%20El%20M%C3%A9dano%20Tenerife">aparcamiento del campo de fútbol</a>. Pasead de la plaza Roja a la playa de Leocadio Machado.</p>
+        <p><strong>13:30 · Comida.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20El%20Templete%20El%20M%C3%A9dano%20Tenerife">El Templete</a> o <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20El%20Pic%C3%BA%20Plaza%20Roja%20El%20M%C3%A9dano">El Picú</a>.</p>
+        <p><strong>Tarde flexible.</strong> Si hay viento o preferís un día corto, cambiad El Médano por Las Vistas o por un paseo al atardecer por La Caleta y Costa Adeje. Candelaria es otra alternativa si os apetece un paseo urbano junto al mar.</p>
+      </details>
       <details><summary>Día 8 · Regreso</summary><p>Salid hacia Tenerife Norte con margen para devolver el coche antes de ir a la terminal. Usad la dirección de devolución del bono, revisad el nivel de combustible que exige el contrato y guardad el justificante de entrega.</p></details>
+      <details><summary>Alternativas de Navidad</summary>
+        <p><strong>Costa Adeje.</strong> Atlantic Markets, del 12 al 24 de diciembre, en <a href="https://www.google.com/maps/search/?api=1&amp;query=Parque%20Royal%20Costa%20Adeje%20Tenerife">Parque Royal</a>. <a href="https://www.eldiario.es/canariasahora/sociedad/costa-adeje-laguna-ruta-mercadillos-navidenos-no-puedes-perder-tenerife_1_13667492.html">Consultar la agenda</a>.</p>
+        <p><strong>Los Realejos.</strong> Mercado navideño del 18 al 20 de diciembre, en las plazas Viera y Clavijo y de La Unión, en Realejo Bajo. <a href="https://www.teneriffa-news.com/es/agenda/agenda-tenerife/iv-mercado-navideno-realejos">Consultar programa</a>.</p>
+      </details>
     </section>
     <section id="comer">
       <h2>Dónde comer</h2>
-      <div class="card">
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=guachinches+Tacoronte+Tenerife">Guachinches en Tacoronte</a><br>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=guachinches+La+Orotava+Tenerife">Guachinches en La Orotava</a><br>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=restaurantes+Playa+San+Juan+Tenerife">Restaurantes en Playa San Juan</a>
-        <p>Para probar comida canaria, buscad escaldón de gofio, carne fiesta o papas arrugadas con mojo. Comprobad el horario del guachinche antes de desplazaros.</p>
-      </div>
+      <details><summary>Guachinches por zonas</summary>
+        <p><strong>Sur.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Cas%20To%C3%B1ito%20Valle%20de%20San%20Lorenzo%20Arona">Cas Toñito</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20La%20Maestra%20Las%20Chafiras">La Maestra</a></p>
+        <p><strong>La Orotava y Los Realejos.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Ram%C3%B3n%20La%20Orotava">Ramón</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20La%20Cernidera%20Las%20Cuevas">La Cernidera</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Los%20G%C3%B3mez%20La%20Orotava">Los Gómez</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Mi%20Casa%20Pedro%20Los%20Realejos">Mi Casa Pedro</a></p>
+        <p><strong>Santa Úrsula y norte.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20La%20Bodega%20Santa%20%C3%9Arsula%20Tenerife">La Bodega</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Don%20Trino%20Santa%20%C3%9Arsula">Don Trino</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Octava%20Isla%20La%20Matanza%20Tenerife">Octava Isla</a></p>
+        <p><strong>Santa Cruz.</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20Bibi%20y%20Mana%20Santa%20Cruz%20de%20Tenerife">Bibi y Mana</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Guachinche%20El%20Escondite%20de%20Lucas%20Santa%20Cruz%20de%20Tenerife">El Escondite de Lucas</a></p>
+        <p>Consultad el horario y el precio actuales antes de salir. <a href="https://guachincheando.com/es/mejores-guachinches">Consultar más opciones y reseñas</a>.</p>
+      </details>
+      <details><summary>Comida canaria · fotos y platos</summary>
+        <p><a href="sabores-de-tenerife.webp"><img class="food-plate" src="sabores-de-tenerife.webp" width="1404" height="1536" loading="lazy" alt="Lámina ilustrada de platos canarios agrupados en entrantes, carnes, pescados y postres">Abrir la lámina a tamaño completo</a></p>
+        <div class="food-lists">
+          <h3>Para compartir</h3><ul><li>Papas arrugadas con mojo y queso asado</li><li>Escaldón de gofio, garbanzas compuestas, ropa vieja y almogrote</li></ul>
+          <h3>Carnes</h3><ul><li>Carne fiesta, cabra en salsa y conejo en salmorejo</li><li>Costillas con papas y piña de millo, bichillo, cochino negro y chuletón</li></ul>
+          <h3>Del mar</h3><ul><li>Pulpo guisado, cherne encebollado y lapas a la plancha</li></ul>
+          <h3>Postres</h3><ul><li>Quesillo, frangollo, bienmesabe y mousse de gofio</li></ul>
+        </div>
+      </details>
     </section>
     <section id="mapas">
       <h2>Mapas y aparcamientos</h2>
